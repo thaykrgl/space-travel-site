@@ -229,6 +229,8 @@ select {
 /* ------------------- */
 
 .large-button {
+  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
   padding: 0 2em;
@@ -253,4 +255,20 @@ select {
 .large-button:focus::after {
   opacity: 1;
   transform: scale(1.5);
+}
+
+.primary-navigation {
+  --gap: 8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
 }
